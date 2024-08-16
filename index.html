@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="lock.png" alt="cadeado fechado">
+            <h2 class="titulo-primeiro">Gerador de senhas</h2>
+            <h3 class="titulo-segundo">Gere instantaneamentre uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="ssed">senha</label>
+            <input name="ssed" type="text" id="campo-senha" readonly>
+        </div>
+        <div class="prment">
+            <h3 class="prment-tti">personalize sua senha</h3>    
+            <div class="prment-coluna_senha">
+                <div class="prment-senha">
+                    <h4 class="prment-senha_tti">Número de cartacteres</h4>
+                    <div class="prment-botoes-ncararct">
+                        <button class="prment-botao">-</button>
+                        <p class="prment-tt1">12</p>
+                        <button class="prment-botao">+</button>
+                    </div>    
+                </div> 
+                <div class="prment-senha">
+                    <h4 class="prment-senha_tti">Características da senha</h4>
+                    <div class="senha-checkbox">
+                        <input name="xx" type="checkbox" class="checkbox" checked>
+                        <label name="xx" for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="senha-checkbox">
+                        <input name="x2x" type="checkbox" class="checkbox">
+                        <label name="x2x" for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="senha-checkbox">
+                        <input name="x3x" type="checkbox" class="checkbox">
+                        <label name="x3x" for="numero">Números</label>
+                    </div>
+                    <div class="senha-checkbox">
+                        <input name="x4x" type="checkbox" class="checkbox">
+                        <label name="x4x" for="simbolo">Símbolos</label>
+                    </div>
+                </div> 
+                <div class="prment-senha">
+                    <h4 class="prment-senha_tti">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraco"></div>
+                    <div class="senhas-texto">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
